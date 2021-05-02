@@ -1,0 +1,192 @@
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+}
+
+.header-container {
+  max-width: 900px;
+  margin: 100px auto;
+  padding: 50px 0 25px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header-container .header-logo img {
+  width: 400px;
+}
+
+.header-container .plofile-btn .btn {
+  display: inline-block;
+  background-color: white;
+  color: #707070;
+  border: 1px solid #707070;
+  padding: 10px 40px;
+  margin: 50px 0;
+  font-weight: 600;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header-container .plofile-btn .btn:hover {
+  background-color: black;
+  color: white;
+}
+
+.header-container .plofile-btn .btn.slide-bg {
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  text-decoration: none;
+}
+
+.header-container .plofile-btn .btn.slide-bg span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  z-index: -1;
+}
+
+.header-container .plofile-btn .btn.slide-bg:hover {
+  color: white;
+}
+
+.header-container .plofile-btn .btn.slide-bg:hover span {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.main-cover {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 25px 0 50px 0;
+}
+
+.main-cover .web .all-cover {
+  max-width: 900px;
+  height: 500px;
+  margin: 50px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.main-cover .web .all-cover .photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 500px;
+  line-height: 0;
+  text-align: center;
+}
+
+.main-cover .web .all-cover .photo img {
+  width: 100%;
+  height: 500px;
+}
+
+.main-cover .web .all-cover a .cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 500px;
+  opacity: 0;
+  z-index: 3;
+}
+
+.main-cover .web .all-cover a .cover:hover {
+  opacity: 0.5;
+  background-color: black;
+}
+
+.main-cover .web .all-cover a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  color: white;
+  z-index: 6;
+  opacity: 0;
+  font-size: xx-large;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-cover .web .all-cover a p:hover {
+  opacity: 1;
+}
+
+.main-cover .web .all-cover a p:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.main-cover .view-container {
+  width: 100%;
+  background-color: #fafafa;
+  padding: 20px;
+}
+
+.main-cover .view-container .view-img {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-cover .view-container .view-img img {
+  width: 70%;
+  background-size: cover;
+}
+
+.main-cover .view-container .view-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 50px;
+  margin: 20px 0 0 0;
+}
+
+.main-cover .view-container .view-text div {
+  letter-spacing: 1px;
+  line-height: 2;
+}
+
+.main-cover .view-container .view-text div p {
+  font-size: small;
+}
+/*# sourceMappingURL=index.css.map */
